@@ -8,9 +8,17 @@ The repo depends on the latest plugin API (obsidian.d.ts) in TypeScript Definiti
 This sample plugin demonstrates some of the basic functionality the plugin API can do.
 - Adds a ribbon icon, which shows a Notice when clicked.
 - Adds a command "Open Sample Modal" which opens a Modal.
+- Adds a command to convert selected text to speech using the ElevenLabs API.
 - Adds a plugin setting tab to the settings page.
 - Registers a global click event and output 'click' to the console.
 - Registers a global interval which logs 'setInterval' to the console.
+
+### ElevenLabs Text to Speech
+
+Use the `Play selection with ElevenLabs` command to generate speech from the
+current selection (or entire note if nothing is selected). The plugin opens a
+player with play/pause controls and highlights the text as it reads. Configure
+your ElevenLabs API key and desired voice ID from the plugin settings.
 
 ## First time developing plugins?
 
